@@ -6,10 +6,12 @@ Se debe instalar previamente Scrapy:
 $ pip install scrapy
 ```
 
-Para correr el scraper
+Para correr el scraper, entrar en carpeta reclamoscl
 
 ```
-$ scrapy runspider complaints
+$ cd reclamoscl/
+
+$ scrapy crawl complaints
 ```
 
 se puede añadir la opción -o para guardar los datos en un archivo. Ej:
