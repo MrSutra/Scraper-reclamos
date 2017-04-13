@@ -6,11 +6,9 @@ Se debe instalar previamente Scrapy:
 $ pip install scrapy
 ```
 
-Para correr el scraper, entrar en carpeta reclamoscl
+Para correr el scraper
 
 ```
-$ cd reclamoscl/
-
 $ scrapy crawl complaints
 ```
 
