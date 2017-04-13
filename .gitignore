@@ -1,3 +1,6 @@
 # Output
 output.json
 rWithURL.json
+
+# Python files
+*.pyc

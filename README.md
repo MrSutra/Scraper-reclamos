@@ -17,5 +17,5 @@ $ scrapy crawl complaints
 se puede añadir la opción -o para guardar los datos en un archivo. Ej:
 
 ```
-$ scrapy runspider complaints -o output.json
+$ scrapy crawl complaints -o output.json
 ```
