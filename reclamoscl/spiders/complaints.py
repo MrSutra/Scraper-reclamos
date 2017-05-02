@@ -17,8 +17,8 @@ class ComplaintSpider(scrapy.Spider):
             'title' : ' - '.join(response.css('h1.reclamo-front-title span::text').extract()),
             'complaint' : ' '.join(response.css('div.node-content p::text').extract()),
             'date' : response.css('div.node-info span::text').extract_first(),
-            'category' : category[0].encode('utf-8'),
-            'url': response.url.encode('utf-8')
+            'category' : category[0],
+            'url': response.url
         }
 
     def parse(self, response):
