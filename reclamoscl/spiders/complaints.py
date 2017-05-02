@@ -14,9 +14,9 @@ class ComplaintSpider(scrapy.Spider):
         else:
             category = [category.extract()[1]]
         yield {
-            'title' : ' - '.join(response.css('h1.reclamo-front-title span::text').extract()).encode('utf-8'),
-            'complaint' : ' '.join(response.css('div.node-content p::text').extract()).encode('utf-8'),
-            'date' : response.css('div.node-info span::text').extract_first().encode('utf-8'),
+            'title' : ' - '.join(response.css('h1.reclamo-front-title span::text').extract()),
+            'complaint' : ' '.join(response.css('div.node-content p::text').extract()),
+            'date' : response.css('div.node-info span::text').extract_first(),
             'category' : category[0].encode('utf-8'),
             'url': response.url.encode('utf-8')
         }
